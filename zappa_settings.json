@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "app_function": "app.main.app",
+        "aws_region": "us-east-1",
+        "profile_name": "exercise-viewer",
+        "project_name": "exercise-viewer",
+        "runtime": "python3.6",
+        "s3_bucket": "zappa-exercise-viewer",
+    }
+}

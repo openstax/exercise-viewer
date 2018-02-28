@@ -1,0 +1,49 @@
+{% block doc -%}
+    <!DOCTYPE html>
+    <html {% block html_attribs %}{% endblock html_attribs %}>
+    {%- block html %}
+        <head>
+            {%- block head %}
+                <title>{% block title %}{% endblock title %}</title>
+
+                {%- block metas %}
+                    <meta name="viewport" content="width=device-width">
+                {%- endblock metas %}
+
+                {%- block styles %}
+                {%- endblock styles %}
+
+            {% endblock head %}
+
+        </head>
+
+        <body{% block body_attribs %}{% endblock body_attribs %}>
+        {% block body -%}
+
+            {% block header %}
+            {% endblock header %}
+
+            {% block navbar %}
+            {% endblock navbar %}
+
+            {% block sidebar %}
+
+                {% block content %}
+                {% endblock content %}
+
+            {% endblock sidebar %}
+
+            {% block footer %}
+            {% endblock footer %}
+
+            {% block scripts %}
+            {% endblock scripts %}
+
+        {%- endblock body %}
+        </body>
+
+    {% endblock html %}
+    </html>
+
+
+{% endblock doc %}
